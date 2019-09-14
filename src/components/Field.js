@@ -5,7 +5,7 @@ import { Name } from '../words';
 class Field extends Component {
   static contextType = LanguageContext;
   render() {
-    const name = Name[this.context];
+    const name = Name[this.context.language];
     return (
       <div className="ui field">
         <label>{name}</label>

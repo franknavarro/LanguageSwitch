@@ -6,7 +6,7 @@ class Button extends Component {
   static contextType = LanguageContext;
 
   render() {
-    const text = Submit[this.context];
+    const text = Submit[this.context.language];
 
     return <button className="ui button primary">{text}</button>;
   }

@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
 import LanguageContext from '../contexts/LanguageContext';
 import { SelectLang } from '../language';
+import SupportedLanguages, { Flags } from '../language';
 
 class LanguageSelector extends Component {
   static contextType = LanguageContext;
 
+  renderFlags = () => {
+    return SupportedLanguages.map(language => {
+      return (
+        <i
+          className={`flag ${Flags[language]}`}
+          key={language}
+          onClick={() => this.context.onLanguageChange(language)}
+        />
+      );
+    });
+  };
+
   render() {
     return (
       <div>
-        {SelectLang[this.context.language]}:
-        <i
-          className="flag us"
-          onClick={() => this.context.onLanguageChange('english')}
-        />
-        <i
-          className="flag nl"
-          onClick={() => this.context.onLanguageChange('dutch')}
-        />
+        {SelectLang[this.context.language]}:{this.renderFlags()}
       </div>
     );
   }

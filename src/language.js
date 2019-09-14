@@ -1,3 +1,10 @@
+export default ['english', 'dutch'];
+
+export const Flags = {
+  english: 'us',
+  dutch: 'nl',
+};
+
 export const Submit = {
   english: 'Submit',
   dutch: 'Voorleggen',

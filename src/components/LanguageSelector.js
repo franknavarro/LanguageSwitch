@@ -20,7 +20,7 @@ class LanguageSelector extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ float: 'right' }}>
         {SelectLang[this.context.language]}:{this.renderFlags()}
       </div>
     );

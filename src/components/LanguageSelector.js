@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LanguageContext from '../contexts/LanguageContext';
-import { SelectLang } from '../words';
+import { SelectLang } from '../language';
 
 class LanguageSelector extends Component {
   static contextType = LanguageContext;

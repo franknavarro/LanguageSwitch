@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LanguageContext from '../contexts/LanguageContext';
-import { Name } from '../words';
+import { Name } from '../language';
 
 class Field extends Component {
   static contextType = LanguageContext;

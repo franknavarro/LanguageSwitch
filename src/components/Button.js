@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LanguageContext from '../contexts/LanguageContext';
-import { Submit } from '../words';
+import { Submit } from '../language';
 
 class Button extends Component {
   static contextType = LanguageContext;
